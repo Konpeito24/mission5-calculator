@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>mission5</title>
+</head>
+    <body>
+      <form name="calcurator">
+        <table>
+          <tr>
+            <td colspan="4">
+            <input type="text" class="display" name="display" value="" disabled>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="8" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="9" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="÷" class="operator" name="div_result" onclick="clickbutton(this)"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="5" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="6" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="×" class="operator" name="multi_result" onclick="clickbutton(this)"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="2" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="3" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="-" class="operator" name="sub_result" onclick="clickbutton(this)"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="0" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="C" onclick="clickbutton(this)"></td>
+            <td><input type="button" value="=" class="equal" onclick="clickbutton(this)"></td></div>
+            <td><input type="button" value="+" class="operator" name="add_result" onclick="clickbutton(this)"></td>
+          </tr>
+        </table>
+      </form>
+      <script src="mission5.js"></script>
+    </body>
+</html>
+
+<style>
+	body{
+		text-align: center;
+		margin-top: 80px;
+    margin-left: 50px;
+	}
+	table {
+    width: 205px;
+    height: 280px;
+		table-layout: fixed;
+    display: inline-block;
+		background-color: rgb(57, 125, 148);
+		padding: 5px;
+    border-radius: 8px;
+    border: solid
+	}
+	td {
+		width: 40px;
+		height: 30px;
+	}
+	input {
+		width: 100%;
+		height: 40px;
+		border: solid 1px;
+    font-size: 30px;
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: white;
+	}
+  input:active{
+    background-color: rgb(180, 202, 220);
+  }
+    .display {
+		border: solid;
+    width: 180px;
+		height: 65px;
+		background-color:white;
+  }
+  .equal{
+    background-color: #213d53;
+    color: aliceblue;
+    border: solid;
+    border-color: black;
+  }
+  .operator{
+    background-color: rgb(191, 213, 255);
+  }
+  
+
+</style>
+
